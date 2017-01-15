@@ -7,10 +7,12 @@ var jade = require('jade');
 app.set('view engine', 'jade');
 
 // Mongo Database
+
 var mongo = require('mongodb');
 var ObjectID = require('mongodb').ObjectID;
-var monk = require('monk');
-var db = monk('kgb124.canadacentral.cloudapp.azure.com:27017/proto'); // TO-DO Refactor this.
+
+const db = require('monk')('mongodb://kgb129:hSkj2AOFrRaL4nfm3zOVliVWmDksInYa8YsSpkO7jLQSPStxr1pjN0FdPlXSmHFLQboN2pnEUBZEnfwpObK8tw==@kgb129.documents.azure.com:10250/proto?ssl=true');
+// const db = require('monk')('kgb124.canadacentral.cloudapp.azure.com:27017/proto');
 
 // MIDDLEWARE
 
