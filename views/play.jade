@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Cards Against MIT
+    link(href='css/styles.css', rel='stylesheet')
+    link(href='img/favicon.ico', type='image/x-icon')
+    script(src="js/jquery-2.1.4.min.js")
+    script(src="js/js.cookie.js")
+    script(src="js/play.js")
+  body
+    section.head
+      div.content
+        div.nav-container
+          a.nav(href="play") Play
+          a.nav(href="billboard") Billboard
+    section.main
+      div.content
+        div.play
+        div.btns
+          div.help Loading...
+          div.submit Submit
+        div.hand
+    section.foot
+      div.content
+        div.credits
+          p Based on the popular Cards Against Humanity
+          p Built by Cosmos Darwin for MIT's 6.148 Web Programming Competition
+          p January 2017
