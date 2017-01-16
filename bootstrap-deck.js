@@ -1,5 +1,4 @@
 // inserts the contents of blackcards.json and whitecards.json into a remote database in Azure
-// run by simply typing "node bootstrap-deck.js" into the terminal
 
 // filesystem api
 var fs = require('fs');
@@ -14,9 +13,10 @@ db.then(() => {
 
   console.log("Successfully connected to the remote database!");
 
-  // create collections
-  var WhiteCardCollection = db.get('whitecards');
-  var BlackCardCollection = db.get('blackcards');
+  // retrive collections
+
+  var whiteCardCollection = db.get('whitecards');
+  var blackCardCollection = db.get('blackcards');
   console.log("Successfully retrieved both collections!");
 
   // insert docs into collections...
@@ -25,13 +25,8 @@ db.then(() => {
     if (err) {
         throw err;
     }
-    // read the file and parse into json object(s)
-    var blackCards = JSON.parse(file);
-    for (var i = 0; i < blackCards.length; i++) {
-      // insert each one into collection in the remote database
-      BlackCardCollection.insert(blackCards[i]);
-      console.log("Inserted " + blackCards[i].string);
-    }
+    var blackCards = JSON.parse(file); // read the file and parse into json object(s)
+    blackCardCollection.insert(blackCards); // insert into collection
     console.log("Successfully inserted all black cards!");
   });
 
@@ -39,13 +34,8 @@ db.then(() => {
     if (err) {
         throw err;
     }
-    // read the file and parse into json object(s)
-    var whiteCards = JSON.parse(file);
-    for (var i = 0; i < whiteCards.length; i++) {
-      // insert each one into collection in the remote database
-      BlackCardCollection.insert(whiteCards[i]);
-      console.log("Inserted " + whiteCards[i].string);
-    }
+    var whiteCards = JSON.parse(file); // read the file and parse into json object(s)
+    whiteCardCollection.insert(whiteCards); // insert into collection
     console.log("Successfully inserted all white cards!");
   });
 
