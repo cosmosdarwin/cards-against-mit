@@ -7,12 +7,10 @@ var jade = require('jade');
 app.set('view engine', 'jade');
 
 // Mongo Database
-
 var mongo = require('mongodb');
 var ObjectID = require('mongodb').ObjectID;
-
-const db = require('monk')('mongodb://kgb129:hSkj2AOFrRaL4nfm3zOVliVWmDksInYa8YsSpkO7jLQSPStxr1pjN0FdPlXSmHFLQboN2pnEUBZEnfwpObK8tw==@kgb129.documents.azure.com:10250/proto?ssl=true');
-// const db = require('monk')('kgb124.canadacentral.cloudapp.azure.com:27017/proto');
+const connectionString = "mongodb://cards-against-mit:EUg4r8NC7Vvsr2NGbRGPmHEtylu6VJKGxchWCUmzfUdnTSTswcOcJS9kCLgNyzAOlUzsNz3b2gznIPGaM5W9wg==@cards-against-mit.documents.azure.com:10250/?ssl=true&sslverifycertificate=false";
+const db = require("monk")(connectionString);
 
 // MIDDLEWARE
 
