@@ -21,7 +21,7 @@ db.then(() => {
 
   // insert docs into collections...
 
-  fs.readFile('data/blackcards.json', function (err, file) {
+  fs.readFile('json/blackcards.json', function (err, file) {
     if (err) {
         throw err;
     }
@@ -30,7 +30,7 @@ db.then(() => {
     console.log("Successfully inserted all black cards!");
   });
 
-  fs.readFile('data/whitecards.json', function (err, file) {
+  fs.readFile('json/whitecards.json', function (err, file) {
     if (err) {
         throw err;
     }
