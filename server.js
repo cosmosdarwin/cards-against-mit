@@ -10,8 +10,7 @@ app.set('view engine', 'jade');
 var mongo = require('mongodb');
 var ObjectID = require('mongodb').ObjectID;
 
-const connectionString = "localhost:27017/cardsdatabase";
-// const connectionString = "mongodb://cards-against-mit:EUg4r8NC7Vvsr2NGbRGPmHEtylu6VJKGxchWCUmzfUdnTSTswcOcJS9kCLgNyzAOlUzsNz3b2gznIPGaM5W9wg==@cards-against-mit.documents.azure.com:10250/cardsdatabase?ssl=true&sslverifycertificate=false";
+const connectionString = "mongodb://cosmos-rehearsal:DCH0cL8G2AyOKzbQ1Kvl2yDncDlftaQPdTm5pZb7BJLQX5USe93pDyQpP0iDrfFjOMS53zV597TmGNV28qQrBA==@cosmos-rehearsal.documents.azure.com:10250/cardsdatabase?ssl=true";
 
 const db = require("monk")(connectionString);
 
