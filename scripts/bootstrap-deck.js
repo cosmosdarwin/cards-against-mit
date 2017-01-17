@@ -5,7 +5,7 @@ var fs = require('fs');
 
 // copy the connection string from the Azure portal
 
-const connectionString = "localhost:27017/cardsdatabase";
+const connectionString = "mongodb://cosmos-rehearsal:nIRhtrE4wkyBGayGmsxlbSWbJfiYINBvMNWcFEJ9OuKB2Ym6gqzafA7nT86FebGJDgFJLn9lXNVLiCq7zFkD7A==@cosmos-rehearsal.documents.azure.com:10250/cardsdatabase?ssl=true";
 
 // access remote database
 const db = require("monk")(connectionString);
