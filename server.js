@@ -190,6 +190,14 @@ app.use(function(req, res, next) {
 
 // RUN
 
-var port = process.env.PORT; // provided by Azure App Service
+// app.listen(80);
 
-app.listen(port);
+
+if (process.env.NODE_ENV == "production") {
+  // in Azure cloud
+  app.listen(process.env.PORT);
+}
+else {
+  // local
+  app.listen(80);
+}
