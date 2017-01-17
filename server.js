@@ -9,7 +9,10 @@ app.set('view engine', 'jade');
 // Mongo Database
 var mongo = require('mongodb');
 var ObjectID = require('mongodb').ObjectID;
+
+// const connectionString = "localhost:27017/cardsdatabase";
 const connectionString = "mongodb://cards-against-mit:EUg4r8NC7Vvsr2NGbRGPmHEtylu6VJKGxchWCUmzfUdnTSTswcOcJS9kCLgNyzAOlUzsNz3b2gznIPGaM5W9wg==@cards-against-mit.documents.azure.com:10250/cardsdatabase?ssl=true&sslverifycertificate=false";
+
 const db = require("monk")(connectionString);
 
 // MIDDLEWARE
@@ -191,7 +194,6 @@ app.use(function(req, res, next) {
 // RUN
 
 // app.listen(80);
-
 
 if (process.env.NODE_ENV == "production") {
   // in Azure cloud
