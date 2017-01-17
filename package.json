@@ -1,5 +1,5 @@
 {
-  "name": "Cards Against MIT",
+  "name": "cards-against-mit",
   "version": "1.0.0",
   "description": "Multiplayer Node.js game based on Cards Against Humanity, with an MIT theme. Built to showcase Microsoft Azure at MIT 6.148 2017.",
   "main": "server.js",

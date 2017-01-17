@@ -3,7 +3,6 @@
 	{ "string" : "Freshmen"},
 	{ "string" : "East Campus"},
 	{ "string" : "Psets"},
-	{ "string" : "Donald Trump's immigration plan"},
 	{ "string" : "Awkward silence"},
 	{ "string" : "Hitting on the Dean from S^3"},
 	{ "string" : "Anne Hunter"},
@@ -23,7 +22,6 @@
 	{ "string" : "Emotions"},
 	{ "string" : "Doing the right thing for the wrong reasons"},
 	{ "string" : "My relationship status"},
-	{ "string" : "Hot people"},
 	{ "string" : "Streaking in the Infinite"},
 	{ "string" : "My hot GRT"},
 	{ "string" : "Getting Ebola at Maseeh Dining"},
@@ -34,7 +32,7 @@
 	{ "string" : "Awkward parents"},
 	{ "string" : "Tim the Beaver"},
 	{ "string" : "My roommate's friend from Wellesley"},
-	{ "string" : "The MIT Football team"},
+	{ "string" : "Beyonce"},
 	{ "string" : "Ramen"},
 	{ "string" : "Not sleeping"},
 	{ "string" : "Richard Stallman's browser history"},
@@ -73,5 +71,7 @@
 	{ "string" : "Bernie Sanders"},
 	{ "string" : "Overachieving"},
 	{ "string" : "Unlimited Dropbox space"},
-	{ "string" : "Career Fair t-shirts"}
+	{ "string" : "Career Fair t-shirts"},
+	{ "string" : "Joe Biden"},
+	{ "string" : "Harambe"}
 ]
