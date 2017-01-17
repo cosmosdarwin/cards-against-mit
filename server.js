@@ -10,7 +10,7 @@ app.set('view engine', 'jade');
 var mongo = require('mongodb');
 var ObjectID = require('mongodb').ObjectID;
 
-const connectionString = "mongodb://cosmos-rehearsal:nIRhtrE4wkyBGayGmsxlbSWbJfiYINBvMNWcFEJ9OuKB2Ym6gqzafA7nT86FebGJDgFJLn9lXNVLiCq7zFkD7A==@cosmos-rehearsal.documents.azure.com:10250/cardsdatabase?ssl=true";
+const connectionString = "localhost:27017/cardsdatabase";
 const db = require("monk")(connectionString);
 
 // MIDDLEWARE
@@ -191,6 +191,9 @@ app.use(function(req, res, next) {
 
 // RUN
 
+app.listen(80);
+
+/*
 if (process.env.NODE_ENV == "production") {
   // in Azure cloud
   app.listen(process.env.PORT);
@@ -199,3 +202,4 @@ else {
   // local
   app.listen(80);
 }
+*/
